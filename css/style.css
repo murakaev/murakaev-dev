@@ -1,22 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
 :root {
   --bg: #060608;
   --bg2: #0b0b10;
+  --blue: #3b82f6;
+  --blue-dim: rgba(59, 130, 246, 0.12);
+  --yellow: #facc15;
+  --yellow-dim: rgba(250, 204, 21, 0.12);
   --purple: #a855f7;
   --purple-dim: rgba(168, 85, 247, 0.12);
   --purple-glow: rgba(168, 85, 247, 0.06);
   --green: #22c55e;
   --green-dim: rgba(34, 197, 94, 0.1);
   --green-glow: rgba(34, 197, 94, 0.05);
-  --text: #e2e8f0;
+  --text: #e2e8f0f1;
   --muted: rgba(226, 232, 240, 0.3);
   --dim: rgba(226, 232, 240, 0.06);
   --border: rgba(168, 85, 247, 0.18);
 
   --fs-base: clamp(12px, 1.2vw, 14px);
   --fs-name: clamp(28px, 5vw, 64px);
-  --pad-body: clamp(16px, 3vw, 48px);
+  --pad-body: clamp(16px, 3vw, 32px);
   --term-w: min(750px, calc(100vw - clamp(20px, 4vw, 80px)));
 }
 
@@ -28,7 +32,7 @@ body {
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: "Courier Prime", monospace;
+  font-family: "Fira Code", monospace;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -202,6 +206,18 @@ body {
   padding: 3px 10px;
   border-radius: 3px;
   border: 1px solid;
+}
+
+.terminal__tag--blue {
+  color: var(--blue);
+  border-color: rgba(59, 130, 246, 0.35);
+  background: var(--blue-dim);
+}
+
+.terminal__tag--yellow {
+  color: var(--yellow);
+  border-color: rgba(250, 204, 21, 0.35);
+  background: var(--yellow-dim);
 }
 
 .terminal__tag--purple {
