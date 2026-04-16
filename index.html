@@ -1,41 +1,74 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>murakaev</title>
-	<link rel="stylesheet" href="normalize.css">
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<header class="header">
-		<div class="header__logo">
-			<a href="/">
-				<span class="logo__bracket">{</span>
-				<span class="logo__text">M</span>
-				<span class="logo__bracket">}</span>
-			</a>
-		</div>
-		<nav class="header__nav">
-			<ul class="nav__list">
-				<li class="nav__item nav__item--active">
-					<a href="#" class="nav__link">Главная</a>
-				</li>
-				<li class="nav__item">
-					<a href="#" class="nav__link">Проекты</a>
-				</li>
-				<li class="nav__item">
-					<a href="#" class="nav__link">Обо мне</a>
-				</li>
-				<li class="nav__item">
-					<a href="#" class="nav__link">Контакты</a>
-				</li>
-			</ul>
-		</nav>
-		<div class="header__lang">
-			<button class="lang__btn lang__btn--active">RU</button>
-			<button class="lang__btn">EN</button>
-		</div>
-	</header>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="murakaev.dev — developer & problem solver, portfolio in progress"
+    />
+    <meta name="author" content="murakaev" />
+    <title>murakaev</title>
+    <meta property="og:title" content="murakaev.dev" />
+    <meta property="og:description" content="developer · problem solver" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="grid__bg"></div>
+    <main>
+      <section class="terminal" aria-label="Terminal">
+        <header class="terminal__header">
+          <div class="terminal__controls">
+            <span class="terminal__control terminal__control--red"></span>
+            <span class="terminal__control terminal__control--yellow"></span>
+            <span class="terminal__control terminal__control--green"></span>
+          </div>
+          <div class="terminal__path">
+            <span class="terminal__path-home">~/</span>
+            murakaev.dev
+            <span class="terminal__branch">‹main›</span>
+          </div>
+          <div class="terminal__spacer"></div>
+        </header>
+        <div class="terminal__body">
+          <div class="terminal__line terminal__line--command">
+            <span class="terminal__prompt">❯</span>
+            <span class="terminal__command">
+              cat <span class="terminal__argument">./portfolio/index.md</span>
+            </span>
+          </div>
+          <div class="terminal__output">
+            <h1 class="terminal__output-name">
+              <span class="terminal__comment">// </span>murakaev
+            </h1>
+            <p class="terminal__output-subtitle">
+              developer · problem solver — portfolio in progress
+            </p>
+            <ul class="terminal__tags">
+              <li class="terminal__tag terminal__tag--purple">#in-progress</li>
+              <li class="terminal__tag terminal__tag--green">#building</li>
+            </ul>
+            <div class="terminal__status">
+              <span class="terminal__status-indicator"></span>
+              <span class="terminal__status-text">build status:</span>
+              <span class="terminal__progress-bar" aria-hidden="true"
+                >█░░░░░░░░░░░░░░░</span
+              >
+              <span class="terminal__progress-value">5%</span>
+            </div>
+          </div>
+          <div class="terminal__line terminal__line--cursor">
+            <span class="terminal__prompt">❯</span>
+            <span class="terminal__caret"></span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <small>© 2026 murakaev.dev · actively building</small>
+    </footer>
+  </body>
 </html>
